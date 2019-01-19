@@ -384,7 +384,7 @@
 								<a class="panel-link" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="true" aria-controls="collapse_2">
 									<div class="panel-heading" id="headingTwo">
 										<div class="panel-number">2</div>
-										<h5 class="panel-title">Wedding Party</h5>
+										<h5 class="panel-title">Cocktail Hour</h5>
 									</div>
 								</a>
 								<div id="collapse_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -777,14 +777,225 @@
 		<!-- Google Map Settings-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrBgapa385AKxkq6QLcl05RoH8Zcza_uI"></script>
 		<script>
-
 			// Add the map center coordinate
 			var center = {lat: 38.580970, lng: -121.488130};
 
-			var map = new google.maps.Map(document.getElementById('map'),
-				{
+			var map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 16,
-					center: center
+					center: center,
+					styles: [
+					  {
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#242f3e"
+					      }
+					    ]
+					  },
+					  {
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#746855"
+					      }
+					    ]
+					  },
+					  {
+					    "elementType": "labels.text.stroke",
+					    "stylers": [
+					      {
+					        "color": "#242f3e"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "administrative",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "visibility": "off"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "administrative.locality",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#d59563"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi",
+					    "stylers": [
+					      {
+					        "visibility": "off"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#d59563"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi.business",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#ffeb3b"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi.business",
+					    "elementType": "labels.text.stroke",
+					    "stylers": [
+					      {
+					        "color": "#000000"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi.park",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#263c3f"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "poi.park",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#6b9a76"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#38414e"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road",
+					    "elementType": "geometry.stroke",
+					    "stylers": [
+					      {
+					        "color": "#212a37"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road",
+					    "elementType": "labels.icon",
+					    "stylers": [
+					      {
+					        "visibility": "off"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#9ca5b3"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road.highway",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#746855"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road.highway",
+					    "elementType": "geometry.stroke",
+					    "stylers": [
+					      {
+					        "color": "#1f2835"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "road.highway",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#f3d19c"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "transit",
+					    "stylers": [
+					      {
+					        "visibility": "off"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "transit",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#2f3948"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "transit.station",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#d59563"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "water",
+					    "elementType": "geometry",
+					    "stylers": [
+					      {
+					        "color": "#17263c"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "water",
+					    "elementType": "labels.text.fill",
+					    "stylers": [
+					      {
+					        "color": "#515c6d"
+					      }
+					    ]
+					  },
+					  {
+					    "featureType": "water",
+					    "elementType": "labels.text.stroke",
+					    "stylers": [
+					      {
+					        "color": "#17263c"
+					      }
+					    ]
+					  }
+					]
 				}
 			);
 
@@ -836,8 +1047,7 @@
 				icon: "img/map_marker.png",
 			});
 
-
-		</script>
+    </script>
 		<!-- Google Map Settings End -->
 
 	</body>
