@@ -749,6 +749,9 @@ footer h2 {
     height: auto;
     width: 100%;
     margin-bottom: 1.5em;
+		border-style: groove;
+		border-width: 2px;
+		border-color: #D4AF37;
 }
 
 /* 11 Twitter Section
