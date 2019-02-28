@@ -1515,6 +1515,9 @@ select.form-control:not([size]):not([multiple]) {
 	#event .text-right{
 		text-align: left !important;
 	}
+	#accommodations .text-right{
+			text-align: left !important;
+		}
 
 }
 /* Small devices (landscape phones, 578px and 767px) */
