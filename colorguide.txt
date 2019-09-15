@@ -1,5 +1,0 @@
-pink de037f
-gold FFDF00
-metalic gold D4AF37
-
-grey font rgba(45, 44, 53, 0.9);
