@@ -504,8 +504,8 @@ footer h2 {
 }
 
 /* RSVP Button */
-.contain {
-    width:500px;
+.rsvp-button-container {
+    width:100%;
     margin: 3em auto;
 }
 
